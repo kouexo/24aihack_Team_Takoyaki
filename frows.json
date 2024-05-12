@@ -1,0 +1,1308 @@
+[
+    {
+        "id": "d5f8c8b4135d5c9b",
+        "type": "tab",
+        "label": "ローカルLLM",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "45ab62af.4b5e2c",
+        "type": "tab",
+        "label": "AI用PC情報",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d5dd748a.406138",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "cloud.3up-tec.jp",
+        "port": "8883",
+        "tls": "9219f1cb.bb67a",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "76c4fa3b.6d0344",
+        "type": "ui_group",
+        "name": "AIパソコン状態",
+        "tab": "be19f1a4.4503d",
+        "order": 1,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1f442316cc43f187",
+        "type": "ui_group",
+        "name": "GPU No0状態",
+        "tab": "be19f1a4.4503d",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28781357a447a5e1",
+        "type": "ui_group",
+        "name": "稼働・回線状態",
+        "tab": "be19f1a4.4503d",
+        "order": 8,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9219f1cb.bb67a",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "be19f1a4.4503d",
+        "type": "ui_tab",
+        "name": "継之助管理モニター",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "68c2d940efcaeac2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#095277",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#095277",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#095277",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0e83be",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#095277",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED ダッシュボード",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "28b3570ab419db0f",
+        "type": "comment",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "Ollama API",
+        "info": "",
+        "x": 80,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "b61332aded15643e",
+        "type": "inject",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "テスト",
+        "props": [
+            {
+                "p": "payload.user",
+                "v": "あなたは何が出来ますか？",
+                "vt": "str"
+            },
+            {
+                "p": "payload.model",
+                "v": "command-r-plus:latest",
+                "vt": "str"
+            },
+            {
+                "p": "payload.user",
+                "v": "日本語で答える有能なAIアシスタントです。",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "d147ab81780723bc"
+            ]
+        ]
+    },
+    {
+        "id": "d147ab81780723bc",
+        "type": "function",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "API設定",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\n// imagesを変数に保存\nvar images = msg.payload.images;\n\n// 基本的なリクエストペイロード構造\nmsg.payload = {\n    model: msg.payload.model,\n    keep_alive: -1,\n    messages: [\n        {\n            role: \"system\",\n            content: msg.payload.system\n        },\n        {\n            role: \"user\",\n            content: msg.payload.user\n        }\n    ],\n    stream: false, // ストリーミングを使用しない\n    options: {num_predict: msg.payload.options.num_predict}\n};\n\n// imagesがBase64の文字列として存在する場合、それを配列にして追加\nif (typeof images === 'string' && images.trim() !== '') {\n    msg.payload.messages[1].images = [images];\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "3f5f3a5d5873d68a"
+            ]
+        ]
+    },
+    {
+        "id": "3f5f3a5d5873d68a",
+        "type": "http request",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "Ollama API",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "query",
+        "url": "http://localhost:11434/api/chat",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "014c11a91637434f",
+                "c0acdfe6a146ec6e"
+            ]
+        ]
+    },
+    {
+        "id": "014c11a91637434f",
+        "type": "switch",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "応答が正常か？",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "1ce387cef01d0f4e"
+            ]
+        ]
+    },
+    {
+        "id": "c0acdfe6a146ec6e",
+        "type": "debug",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "72b60a91e2d04aa3",
+        "type": "mqtt out",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "",
+        "topic": "004/LLM_OUT",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d5dd748a.406138",
+        "x": 1100,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7b0e2964236caaac",
+        "type": "mqtt in",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "",
+        "topic": "004/LLM_IN",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "d5dd748a.406138",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "099ec5e6ec0a9e0d",
+                "d147ab81780723bc"
+            ]
+        ]
+    },
+    {
+        "id": "099ec5e6ec0a9e0d",
+        "type": "debug",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1ce387cef01d0f4e",
+        "type": "change",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "回答取り出し",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 100,
+        "wires": [
+            [
+                "72b60a91e2d04aa3",
+                "71ed5f9e1a97510a"
+            ]
+        ]
+    },
+    {
+        "id": "71ed5f9e1a97510a",
+        "type": "debug",
+        "z": "d5f8c8b4135d5c9b",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "25656985.439356",
+        "type": "mqtt out",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "topic": "004/CPU",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d5dd748a.406138",
+        "x": 460,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1e2bd555.c47c8b",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "76c4fa3b.6d0344",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU温度",
+        "label": "℃",
+        "format": "{{value | number:1}}",
+        "min": "20",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f4fd49ea.8381a8",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "76c4fa3b.6d0344",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU使用率",
+        "label": "%",
+        "format": "{{value | number:0}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3f3711ac.84b96e",
+        "type": "inject",
+        "z": "45ab62af.4b5e2c",
+        "name": "1秒",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "17b62e54.f6eb12",
+                "4d9c4cbc.881a24",
+                "c56521aafdc5b787",
+                "efdd1bb2dd2f8ddd",
+                "4998a343.457dec",
+                "074c8a9166ac11ad"
+            ]
+        ]
+    },
+    {
+        "id": "f5b2b27c.fb6cf",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cpuTempC",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "1e2bd555.c47c8b"
+            ]
+        ]
+    },
+    {
+        "id": "64f30d5d.88a4d4",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cpuUsage",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "f4fd49ea.8381a8"
+            ]
+        ]
+    },
+    {
+        "id": "a2f6b467.cb9138",
+        "type": "comment",
+        "z": "45ab62af.4b5e2c",
+        "name": "PC状態",
+        "info": "",
+        "x": 70,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f52a757c.933f28",
+        "type": "comment",
+        "z": "45ab62af.4b5e2c",
+        "name": "クラウド送信",
+        "info": "",
+        "x": 90,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "70037b0d.0117e4",
+        "type": "inject",
+        "z": "45ab62af.4b5e2c",
+        "name": "1分周期",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/1 0-23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            [
+                "f1b164e9.3e9eb8"
+            ]
+        ]
+    },
+    {
+        "id": "f1b164e9.3e9eb8",
+        "type": "function",
+        "z": "45ab62af.4b5e2c",
+        "name": "JSON生成",
+        "func": "msg.payload =  {\n    \"cpuT\": global.get(\"cpuTempC\"),\n    \"cpuU\": global.get(\"cpuUsage\"),\n    \"memusage\": global.get(\"memusage\"),\n    \"GPU_usage\": flow.get(\"GPU_usage\"),\n    \"VRAM_usage\": flow.get(\"VRAM_usage\"),\n    \"GPU_temp\": flow.get(\"GPU_temp\"),\n    \"ping\": global.get(\"ping\"),\n    \"uptime\": global.get(\"uptime\"),\n    \"5g\": global.get(\"5g\"),\n    \"capacity\": global.get(\"capacity\"),\n    \"time\": new Date().getTime()\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 880,
+        "wires": [
+            [
+                "25656985.439356"
+            ]
+        ]
+    },
+    {
+        "id": "4d9c4cbc.881a24",
+        "type": "cpu",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "msgCore": false,
+        "msgOverall": true,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "64f30d5d.88a4d4"
+            ]
+        ]
+    },
+    {
+        "id": "17b62e54.f6eb12",
+        "type": "cpu",
+        "z": "45ab62af.4b5e2c",
+        "name": "CPU温度",
+        "msgCore": false,
+        "msgOverall": false,
+        "msgArray": false,
+        "msgTemp": true,
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "f5b2b27c.fb6cf"
+            ]
+        ]
+    },
+    {
+        "id": "c56521aafdc5b787",
+        "type": "Memory",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "scale": "Gigabyte",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "179105f57ed63560"
+            ]
+        ]
+    },
+    {
+        "id": "179105f57ed63560",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "memusage",
+                "pt": "global",
+                "to": "payload.memusage",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "b127a283f147e473"
+            ]
+        ]
+    },
+    {
+        "id": "b127a283f147e473",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "76c4fa3b.6d0344",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "メモリ使用率",
+        "label": "%",
+        "format": "{{payload.memusage | number:0}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "074c8a9166ac11ad",
+        "type": "exec",
+        "z": "45ab62af.4b5e2c",
+        "command": "nvidia-smi",
+        "addpay": "",
+        "append": "--query-gpu=utilization.gpu,memory.used,temperature.gpu --format=csv,noheader,nounits",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "4c14d26cd4ebeee9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1f89c8a09231e3f3",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "1f442316cc43f187",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "GPU使用率",
+        "label": "%",
+        "format": "{{msg.payload.No0.gpuUtilization}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b68df3947ba0fee5",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "1f442316cc43f187",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "VRAM使用量",
+        "label": "GB",
+        "format": "{{msg.payload.No0.memoryUsedGB}}",
+        "min": 0,
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "45c10dc1785b8edd",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "1f442316cc43f187",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "GPU温度",
+        "label": "℃",
+        "format": "{{msg.payload.No0.gpuTemperature}}",
+        "min": "20",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "efdd1bb2dd2f8ddd",
+        "type": "Uptime",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "7db46216cb94c948"
+            ]
+        ]
+    },
+    {
+        "id": "7db46216cb94c948",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "uptime",
+                "pt": "global",
+                "to": "payload.uptime",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.uptime / 3600 / 24\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "f9b81f8d3a84bbcd"
+            ]
+        ]
+    },
+    {
+        "id": "f9b81f8d3a84bbcd",
+        "type": "ui_text",
+        "z": "45ab62af.4b5e2c",
+        "group": "28781357a447a5e1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "AI用PC連続稼働日数",
+        "format": "{{msg.payload | number:1}}日",
+        "layout": "row-spread",
+        "className": "",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "4998a343.457dec",
+        "type": "Drives",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "73ad12be.ce6f9c"
+            ]
+        ]
+    },
+    {
+        "id": "d777a440.67f4e8",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "capacity",
+                "pt": "global",
+                "to": "payload.capacity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 280,
+        "wires": [
+            [
+                "f5db0902.bf4638"
+            ]
+        ]
+    },
+    {
+        "id": "f5db0902.bf4638",
+        "type": "debug",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6e7a4164.3e4d",
+        "type": "comment",
+        "z": "45ab62af.4b5e2c",
+        "name": "SSD使用率",
+        "info": "",
+        "x": 290,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "73ad12be.ce6f9c",
+        "type": "split",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "f548fc4c.d62d5"
+            ]
+        ]
+    },
+    {
+        "id": "f548fc4c.d62d5",
+        "type": "switch",
+        "z": "45ab62af.4b5e2c",
+        "name": "ドライブ選択",
+        "property": "payload.mount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "/",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "d777a440.67f4e8"
+            ]
+        ]
+    },
+    {
+        "id": "186b8b1f2de9e069",
+        "type": "switch",
+        "z": "45ab62af.4b5e2c",
+        "name": "応答在りか",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 720,
+        "wires": [
+            [
+                "7766075037e8d6d5"
+            ],
+            [
+                "a081682ac34e9daf"
+            ]
+        ]
+    },
+    {
+        "id": "a081682ac34e9daf",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ping",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac8e0765192bd166",
+        "type": "comment",
+        "z": "45ab62af.4b5e2c",
+        "name": "10秒毎にVPSへpingを行う",
+        "info": "",
+        "x": 130,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7766075037e8d6d5",
+        "type": "change",
+        "z": "45ab62af.4b5e2c",
+        "name": "カウント変数に１足す",
+        "rules": [
+            {
+                "t": "set",
+                "p": "count",
+                "pt": "global",
+                "to": "$globalContext(\"count\")+1\t",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "ping",
+                "pt": "global",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd27f662106053db",
+        "type": "ui_gauge",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "group": "28781357a447a5e1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "ping応答時間",
+        "label": "msec",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 330,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "b0c65e9494f63c1c",
+        "type": "ping",
+        "z": "45ab62af.4b5e2c",
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "サーバへのping",
+        "host": "8.8.8.8",
+        "timer": "15",
+        "inputs": 0,
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "186b8b1f2de9e069",
+                "dd27f662106053db"
+            ]
+        ]
+    },
+    {
+        "id": "5a2ce8aaa7138d15",
+        "type": "function",
+        "z": "45ab62af.4b5e2c",
+        "name": "JSONへ変換",
+        "func": "// msg.payload に \"0, 570, 44\\n0, 14, 41\" などの文字列が含まれると仮定\nvar lines = msg.payload.split(/\\r?\\n/); // 改行コードの違いに対応して行に分割\nvar result = {};\nvar totalGpuUtilization = 0;\nvar totalMemoryUsed = 0;\nvar totalTemperature = 0;\n\nlines.forEach(function (line, index) {\n    var parts = line.split(', '); // コンマとスペースで分割\n    if (parts.length === 3) {\n        var gpuUtilization = parseInt(parts[0], 10); // GPU使用率\n        var memoryUsed = parseInt(parts[1], 10); // VRAM使用量（MB）\n        var temperature = parseInt(parts[2], 10); // GPU温度（摂氏）\n\n        // 計算用変数に値を追加\n        totalGpuUtilization += gpuUtilization;\n        totalMemoryUsed += memoryUsed;\n        totalTemperature += temperature;\n\n        // GPUの番号をキー名に含める\n        var gpuKey = 'No' + index;\n        result[gpuKey] = {\n            gpuUtilization: gpuUtilization,\n            memoryUsedGB: parseFloat((memoryUsed / 1024).toFixed(1)), // MBからGBへ変換し、少数第一位まで\n            gpuTemperature: temperature\n        };\n    }\n});\n\n// GPUの台数\nvar numGpus = lines.length;\n\n// flow変数に値をセット\nflow.set('GPU_usage', totalGpuUtilization / numGpus); // GPU使用率の平均値\nflow.set('VRAM_usage', parseFloat((totalMemoryUsed / 1024).toFixed(1))); // VRAM使用量の合計値（GB）\nflow.set('GPU_temp', totalTemperature / numGpus); // GPU温度の平均値\n\nmsg.payload = result; // 結果をmsg.payloadにセット\nreturn msg; // 変更したmsgを返す\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "1f89c8a09231e3f3",
+                "45c10dc1785b8edd",
+                "b68df3947ba0fee5",
+                "912cb45908faa426",
+                "8121dcae973b03c9"
+            ]
+        ]
+    },
+    {
+        "id": "d5d65ff59c3a1262",
+        "type": "debug",
+        "z": "45ab62af.4b5e2c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "912cb45908faa426",
+        "type": "debug",
+        "z": "45ab62af.4b5e2c",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a621beece6e4cc10",
+        "type": "inject",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "074c8a9166ac11ad"
+            ]
+        ]
+    },
+    {
+        "id": "4c14d26cd4ebeee9",
+        "type": "switch",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Error",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "d5d65ff59c3a1262"
+            ],
+            [
+                "5a2ce8aaa7138d15"
+            ]
+        ]
+    },
+    {
+        "id": "8121dcae973b03c9",
+        "type": "mqtt out",
+        "z": "45ab62af.4b5e2c",
+        "name": "",
+        "topic": "004/GPU",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d5dd748a.406138",
+        "x": 800,
+        "y": 540,
+        "wires": []
+    }
+]
