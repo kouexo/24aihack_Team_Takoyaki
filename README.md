@@ -2,7 +2,7 @@
 24aihackで作成したNode-REDフローです
 
 ## GALLERIAフロー
-Galleria_flow.png
+![Galleria_frow](Galleria_frow.png)
 ## 継之助フロー
 
 ## 出力例
