@@ -6,6 +6,11 @@
 ## 出力例
 ![Example Image](example.png)
 
+## システム概要
+
+## 画像生成
+
+## プロセス提案
 
 ## GALLERIAフロー
 ![Galleria_frow](Galleria_flow.png)
