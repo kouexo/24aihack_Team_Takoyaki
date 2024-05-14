@@ -11,9 +11,11 @@
 ![system Image](images/system.png)
 
 ### システム概要-画像生成
+将来の夢と個人情報をもとにSDXLで画像生成を行います。この時、プロンプトをGPT-4に考えてもらいます。
 ![system Image](images/system_image_create.png)
 
 ### システム概要-タスク生成
+将来の夢と個人情報をもとにCommandR+でタスクの生成を行います。その後ChatVRMにテキストを送信、読み上げを行います。
 ![system Image](images/system_task_create.png)
 
 ## GALLERIAフロー
